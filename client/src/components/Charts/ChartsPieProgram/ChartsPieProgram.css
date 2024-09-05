@@ -1,0 +1,38 @@
+.chartContainer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ffa500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .chartTitle {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .pieChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  text{
+    color:white;
+  }
+
+  tspan {
+    fill: #ffffff;
+  }
+
+  .css-1daenge-MuiChartsSurface-root .MuiPieArcLabel-root {
+    font-weight: 400;
+}

@@ -1,0 +1,16 @@
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid #d9d9d9;
+    background: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+:where(.css-dev-only-do-not-override-1okl62o)[class^="ant-select"] [class^="ant-select"], :where(.css-dev-only-do-not-override-1okl62o)[class*=" ant-select"] [class^="ant-select"], :where(.css-dev-only-do-not-override-1okl62o)[class^="ant-select"] [class*=" ant-select"], :where(.css-dev-only-do-not-override-1okl62o)[class*=" ant-select"] [class*=" ant-select"] {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+}
+
+:where(.css-dev-only-do-not-override-1okl62o).ant-select-single.ant-select-show-arrow .ant-select-selection-item, :where(.css-dev-only-do-not-override-1okl62o).ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+    color: white;
+}

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/onlyfits-1ba90.appspot.com/o/photo_2024-05-15_16-49-04.jpg?alt=media&token=cd1aa805-3f82-4f8a-98ee-9141d23beb9d');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.exercise-container {
+  background: #2b2b2b !important;
+  border: 1px solid #ff6600;
+  color: #ff6600;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 1400px;
+  transition: none !important;
+}
+
+.exercise-container:hover {
+  transform: none !important;
+  background: #2b2b2b !important;
+}
+
+.exercise-card {
+  background: #1f1f1f !important;
+  border: none;
+  color: #ff6600;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 5px;
+  text-align: center;
+  transition: none !important;
+}
+
+.exercise-card:hover {
+  transform: none !important;
+  background: #1f1f1f !important;
+}
+
+.ant-typography.exercise-title {
+  background: linear-gradient(90deg, #FF6F00, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  text-align: center;  
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  margin-bottom: 5px;
+}
+
+.exercise-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.exercise-image {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
+
+.exercise-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.ant-card-body .ant-typography {
+  background: linear-gradient(90deg, #FF6F00, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.timer-text {
+  background: linear-gradient(90deg, #FF6F00, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.progress-bar {
+  margin-top: 8px;
+  height: 8px;
+}
+
+.orange-title {
+  background: linear-gradient(90deg, #FF6F00, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-button {
+  background: linear-gradient(90deg, #FF6F00, #FFA500);
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 25px 50px;
+  transform: skewX(-15deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  margin: 0 auto;
+  font-size: 26px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.2em;
+}
+
+.custom-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  color: #000000 !important;
+}
+
+.custom-button:focus {
+  background: linear-gradient(90deg, #FF6F00, #FFA500);
+  color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(255, 165, 0, 0.4);
+}
+
+.custom-button:active {
+  animation: pulse 0.3s;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.ant-progress-text {
+  color: #FFA500 !important;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.morning-workout-title {
+  background: linear-gradient(90deg, #FF6F00, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;  
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+.control-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

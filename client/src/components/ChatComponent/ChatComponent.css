@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/onlyfits-1ba90.appspot.com/o/photo_2024-05-15_16-49-04.jpg?alt=media&token=cd1aa805-3f82-4f8a-98ee-9141d23beb9dkground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  font-style: normal;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.chatContainer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1300px;
+  height: 80vh;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ff6600;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatTitle {
+  margin-bottom: 20px;
+  color: #ff6600 !important;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.chatMessages {
+  max-width: 100%;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden; /* Добавляем скрытие горизонтальной прокрутки */
+  margin-bottom: 20px;
+  background-color: #2e2e2e;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ff6600;
+  scrollbar-width: thin;
+  scrollbar-color: #ff6600 transparent;
+}
+
+.chatMessages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatMessages::-webkit-scrollbar-thumb {
+  background-color: #ff6600;
+  border-radius: 10px;
+}
+
+.chatMessages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chatMessages:hover::-webkit-scrollbar {
+  display: block;
+}
+
+.chatMessage {
+  padding: 10px;
+  border-bottom: 1px solid #444444;
+  display: inline-block;
+  min-width: 200px;
+  max-width: 80%;
+  border-radius: 5px;
+  color: #ffffff;
+  word-wrap: break-word;
+  white-space: pre-wrap; /* Перенос текста на новый ряд */
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+}
+
+.chatMessageLeft {
+  float: left;
+  clear: both;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 5px 5px 5px 0;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.chatMessageRight {
+  float: right;
+  clear: both;
+  background-color: rgba(255, 102, 0, 0.5);
+  border-radius: 5px 5px 0 5px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.userName {
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: #ffffff; /* Белый цвет для имени пользователя */
+  margin-right: 5px; /* Добавление отступа после имени пользователя */
+}
+
+.messageText {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: #ffffff; /* Белый цвет для текста сообщений */
+  word-wrap: break-word;
+  white-space: pre-wrap; /* Перенос текста на новый ряд */
+  overflow-wrap: break-word;
+}
+
+.chatForm {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  position: relative;
+  flex-shrink: 0;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.customChatInput {
+  flex-grow: 1;
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #ff6600 !important;
+  border-radius: 5px !important;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.customChatButton {
+  background: linear-gradient(90deg, #FF6F00, #FFA500);
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
+  transform: skewX(-15deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  width: 100px;
+  flex-shrink: 0;
+  font-size: 26px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.2em;
+  margin: 0 auto;
+}
+
+.customChatButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  color: #000000 !important;
+}
+
+.customChatButton:focus {
+  background: linear-gradient(90deg, #FF6F00, #FFA500);
+  color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(255, 165, 0, 0.4);
+}
+
+.customChatButton:active {
+  animation: pulse 0.3s;
+}
+
+.ant-btn-danger.customChatButton:hover {
+  background: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.emojiPickerReact {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  z-index: 1000;
+  background-color: #333333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .chatContainer {
+    width: 95%;
+    height: 85vh;
+  }
+
+  .chatForm {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .customChatButton {
+    width: 100px;
+  }
+}
+
+.antButtonOverride:hover {
+  background: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+.ant-list.ant-list-split.ant-list-bordered.css-dev-only-do-not-override-1okl62o {
+  border: none !important;
+}
+
+.ant-list.ant-list-split.ant-list-bordered.css-dev-only-do-not-override-1okl62o .ant-list-item {
+  border-bottom: none !important;
+}

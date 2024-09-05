@@ -1,0 +1,176 @@
+body {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/onlyfits-1ba90.appspot.com/o/photo_2024-05-15_16-49-04.jpg?alt=media&token=cd1aa805-3f82-4f8a-98ee-9141d23beb9d');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+}
+
+#day-plan-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  /* background-color: rgba(26, 26, 26, 0.9); */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+  /* border: 2px solid #FFA500; */
+  margin: 20px;
+}
+
+h2,
+h3,
+div {
+  color: #ffffff;
+  /* font-family: 'Arial', sans-serif; */
+  font-family: "Bebas Neue", sans-serif;
+  /* font-size: 20px; */
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.start-btn {
+  background: linear-gradient(90deg, #ff6f00, #ffa500);
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.start-btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.start-btn:hover {
+  background: linear-gradient(90deg, #ffa500, #ff6f00);
+}
+
+.start-btn:focus {
+  background: linear-gradient(90deg, #ff6f00, #ffa500);
+  color: #ffffff;
+}
+
+.meal-container {
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.meal-container h2,
+.meal-container h3 {
+  color: #ffffff;
+}
+
+.meal-container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.meal-container a:hover {
+  text-decoration: underline;
+}
+
+/* Добавим стили для модального окна */
+.ant-modal-content {
+  background-color: rgba(26, 26, 26, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffa500;
+}
+
+.ant-modal-footer {
+  border-top: none;
+}
+
+.ant-modal-footer .ant-btn-primary {
+  background: linear-gradient(90deg, #ff6f00, #ffa500);
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ant-modal-footer .ant-btn-primary:hover {
+  background: linear-gradient(90deg, #ffa500, #ff6f00);
+}
+
+.ant-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ant-modal-footer .ant-btn-primary {
+  display: flex;
+  align-items: center;
+}
+
+:where(.css-dev-only-do-not-override-1okl62o).ant-modal {
+  padding: 0px;
+}
+
+:where(.css-dev-only-do-not-override-1okl62o).ant-modal .ant-modal-content {
+  background-color: rgba(26, 26, 26, 1);
+  border: 1px solid #ffa500;
+}
+
+/* meal recipies styles */
+.meal-container {
+  padding: 2px;
+}
+
+.day-meal-container {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  font-weight: 400;
+}
+
+.meal-pic {
+  border-radius: 8px;
+  width: 100px;
+  height: 80px;
+}
+
+.meal-complexity {
+  background-color: rgb(33, 32, 32);
+  font-weight: 400;
+  width: 100px;
+  border-radius: 8px;
+}
+
+.meal-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  padding-left: 10px;
+  min-width: 210px;
+}
+
+.meal-description h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.meal-title-consistensy{
+  font-size:smaller;
+  font-weight: 300;
+}
+
+.css-dev-only-do-not-override-1okl62o  {
+  color: white;
+}

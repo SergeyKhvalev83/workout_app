@@ -1,0 +1,72 @@
+/* STASHED */
+body {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/onlyfits-1ba90.appspot.com/o/photo_2024-05-15_16-49-04.jpg?alt=media&token=cd1aa805-3f82-4f8a-98ee-9141d23beb9dkground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+}
+
+.delete-prog-btn {
+  background-color: rgb(255, 105, 5);
+  color: black;
+  font-weight: 600;
+  border: solid 1px black
+}
+
+.programs-container-program-page {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:10px;
+  margin: auto;
+  width: fit-content;
+  background-color:rgb(26, 26,26, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+  min-width: 90vh;
+  max-width: 1300px;
+  min-height: 80vh;
+
+}
+
+.card-info {
+  width: 340px;
+  text-align: center;
+  color: white;
+}
+
+.ant-card-body{
+  background-color: rgb(12, 7, 7);
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  transition: 0.9s;
+  opacity: 0.89;
+}
+.card:hover{
+  opacity: 1;
+}
+
+#search-btn{
+  background-color: rgb(255, 105, 5);
+  color: black;
+  font-weight: 600;
+  border: solid 1px black;
+  height: 32px;
+  border-radius: 6px;
+  padding: 4px 15px;
+}
+
+
+
